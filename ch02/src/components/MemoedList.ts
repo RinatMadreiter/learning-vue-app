@@ -6,10 +6,10 @@ export const MemoedList = {
     :key="image.id" 
     :style=" selected === image.id ? { border: '1px solid blue' } : {}"
     @click="selected = image.id"
-    v-memo="[selected === image.id]" <1>
+    v-memo="[selected === image.id]" 
     >
     <img :src="image.url">
-    <div>{{image.title}}</h2>
+    <h2>{{image.title}}</h2>
     </li>
   </ul>
   `,
